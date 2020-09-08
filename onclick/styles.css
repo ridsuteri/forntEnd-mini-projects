@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+#red-box{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    /* position: relative;
+    top:20px;
+    left: 200px; */
+    margin: auto;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#target-div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+#target-div img{
+    height: 100%;
+    width: 100%;
+}

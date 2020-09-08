@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="add-section">
+        <h1>Add Details</h1>
+
+        <form>
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name" required><br>
+            
+            <label for="roll">Roll No : </label>
+            <input type="number" name="roll" id="roll" required><br>
+            
+            <label for="marks">Marks : </label>
+            <input type="number" name="marks" id="marks" min="0" max="100" required><br>
+
+            <button type="submit" id="submit">Add</button>
+
+        </form>
+    </div>
+
+    <div id="display-section">
+        <h3>Added Details</h3>
+    
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

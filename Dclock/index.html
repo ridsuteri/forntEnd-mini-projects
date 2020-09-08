@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-ed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        #clock-container {
+            margin: auto;
+            width: 80%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="clock-container">
+
+        <div class="jumbotron">
+            <h1 class="display-4">Hey There ! <br>
+                Today is - <span id="date"></span><br>
+                & it's <span id="time"></span> Now
+            </h1>
+
+            <p class="lead"></p>
+            <hr class="my-4">
+            <p>Also a gentle reminder -'TIME AND TIDES WAITS FOR NONE'</p>
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Browse Time
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Hey Sorry we don't have other countries times as of now.. <br>
+                    But we will be adding them soon <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let time;
+        let date;
+        let obj;
+        const options={ weekday:'long',year:'numeric',month:'long',day:'numeric'};
+
+        setInterval(() =>{
+            obj=new Date();
+            date=obj.toLocaleDateString(undefined,options);
+            time=obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds();
+            document.getElementById('date').innerHTML=date;
+            document.getElementById('time').innerHTML=time;
+        },1000);
+        
+    </script>
+</body>
+
+</html>

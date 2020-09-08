@@ -1,0 +1,39 @@
+*{
+    transition-delay: 500;
+}
+
+
+h1{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+h2{
+    margin: 160px;
+    text-align: center;
+}
+
+#container{
+    /* text-align: center; */
+    margin: auto;
+    height: 40px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 28px;
+    background-color:white;
+}
+
+#circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.color-white{
+    color:white;
+}
+
+.black-bg{
+    background-color: black;
+}
